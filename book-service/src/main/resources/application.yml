@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: book-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bookdb
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
